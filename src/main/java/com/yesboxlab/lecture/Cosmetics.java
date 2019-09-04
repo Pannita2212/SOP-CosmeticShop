@@ -39,10 +39,11 @@ public class Cosmetics {
     public String buyCosmetics(int num) {
         if(this.stock == 0){
             return "Product out of stock";
-        }else {
+        }else if(num>0 && num <= this.stock){
             this.stock -= num;
-            return "You selected "+ this.name+"!!";
+            return "You selected "+ this.name + " " + num +" piece(s)!!";
         }
+        return "Order error!!!";
     }
 
 

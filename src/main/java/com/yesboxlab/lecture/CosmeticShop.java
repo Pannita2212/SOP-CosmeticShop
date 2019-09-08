@@ -4,6 +4,8 @@ package com.yesboxlab.lecture;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -16,6 +18,7 @@ public class CosmeticShop {
 		SpringApplication.run(CosmeticShop.class, args);
 	}
 
+//	Assignment 1
 	List<Cosmetics> cosmetics = new ArrayList<>(Arrays.asList(
 			new Cosmetics("l1", "Addict Lip Maximizer Plumping Gloss", 5),
 			new Cosmetics("l2", "TOM FORD lip Color", 10),
@@ -80,4 +83,32 @@ public class CosmeticShop {
 		}
 		return "Product out of stock";
 	}
+
+
+
+//	Assignment 2
+    private SingletonCosmetic temp = SingletonCosmetic.getInstance();
+
+	@RequestMapping(value = "/get/{index}")
+    public ResponseEntity<Cosmetics> get(@PathVariable int index) {
+        return new ResponseEntity<Cosmetics>(this.temp.getCosmetics(index), HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public ResponseEntity<List<Cosmetics>> create(@RequestBody Cosmetics cosmetic) {
+	    this.temp.createCosmetic(cosmetic);
+        return new ResponseEntity<List<Cosmetics>>(this.temp.getAllCosmetics(), HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/update/{index}", method = RequestMethod.POST)
+    public ResponseEntity<List<Cosmetics>> update(@RequestBody Cosmetics cosmetic, @PathVariable int index){
+        this.temp.updateCosmetic(index, cosmetic);
+        return new ResponseEntity<List<Cosmetics>>(this.temp.getAllCosmetics(), HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/delete/{index}")
+    public ResponseEntity<List<Cosmetics>> delete(@PathVariable int index){
+        this.temp.delCosmetic(index);
+        return new ResponseEntity<List<Cosmetics>>(this.temp.getAllCosmetics(), HttpStatus.OK);
+    }
 }

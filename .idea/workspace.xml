@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="913cadbc-376d-46ab-9196-f3a005d913b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/SingletonCosmetic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/CosmeticShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/CosmeticShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SampleMaven.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/CosmeticShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/CosmeticShop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Cosmetics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Cosmetics.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1QJlRmNJhxBApNNudEoW0sb1jTx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -120,6 +128,7 @@
       <workItem from="1567523402274" duration="719000" />
       <workItem from="1567578711715" duration="13576000" />
       <workItem from="1567610201864" duration="1244000" />
+      <workItem from="1567919479683" duration="6033000" />
     </task>
     <servers />
   </component>

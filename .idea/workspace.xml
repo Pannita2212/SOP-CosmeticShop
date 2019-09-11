@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="913cadbc-376d-46ab-9196-f3a005d913b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/SingletonCosmetic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cosmetics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cosmetics.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/CosmeticShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/CosmeticShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SampleMaven.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/Cosmetics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/Cosmetics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/Foundation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/Foundation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/Lip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/Lip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/SingletonCosmetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yesboxlab/lecture/SingletonCosmetic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/CosmeticShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/CosmeticShop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Cosmetics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Cosmetics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Foundation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Foundation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Lip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/Lip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/SingletonCosmetic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yesboxlab/lecture/SingletonCosmetic.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +135,8 @@
       <workItem from="1567523402274" duration="719000" />
       <workItem from="1567578711715" duration="13576000" />
       <workItem from="1567610201864" duration="1244000" />
-      <workItem from="1567919479683" duration="6033000" />
+      <workItem from="1567919479683" duration="6148000" />
+      <workItem from="1568191360161" duration="7947000" />
     </task>
     <servers />
   </component>

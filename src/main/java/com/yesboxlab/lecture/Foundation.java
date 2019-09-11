@@ -1,16 +1,14 @@
 package com.yesboxlab.lecture;
 
 public class Foundation extends Cosmetics {
-    String brand, skin, coverage;
-    double size, price;
+    String brand, skin;
+    double price;
 
-    public Foundation(String cosmeticId, String name, String brand, double size, double price, int stock, String skin, String coverage) {
-        super(cosmeticId, name, stock);
+    public Foundation(String cosmeticId, String name, String brand, double price, int stock, String skin, String category) {
+        super(cosmeticId, name, stock, category);
         this.brand =brand;
-        this.size = size;
         this.price = price;
         this.skin = skin;
-        this.coverage = coverage;
     }
 
     public Foundation() {
@@ -29,20 +27,6 @@ public class Foundation extends Cosmetics {
     public void setSkin(String skin) {
         this.skin = skin;
     }
-    public String getCoverage() {
-        return coverage;
-    }
-    public void setCoverage(String coverage) {
-        this.coverage = coverage;
-    }
-
-    public double getSize() {
-        return size;
-    }
-    public void setSize(double size) {
-        this.size = size;
-    }
-
     public double getPrice() {
         return price;
     }

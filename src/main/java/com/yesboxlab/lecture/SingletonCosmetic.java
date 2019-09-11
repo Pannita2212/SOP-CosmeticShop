@@ -71,6 +71,18 @@ public class SingletonCosmetic {
             cosmetics.get(index).setCosmeticId(cosmetic.getCosmeticId());
             cosmetics.get(index).setName(cosmetic.getName());
             cosmetics.get(index).setStock(cosmetic.getStock());
+            cosmetics.get(index).setCategory(cosmetic.getCategory());
+
+            if(cosmetics.get(index) instanceof Lip){
+                ((Lip)cosmetics.get(index)).setColor(((Lip)cosmetic).getColor());
+                ((Lip)cosmetics.get(index)).setBrand(((Lip)cosmetic).getBrand());
+                ((Lip)cosmetics.get(index)).setPrice(((Lip)cosmetic).getPrice());
+            }
+            else if(cosmetics.get(index) instanceof Foundation){
+                ((Foundation)cosmetics.get(index)).setSkin(((Foundation)cosmetic).getSkin());
+                ((Foundation)cosmetics.get(index)).setPrice(((Foundation)cosmetic).getPrice());
+                ((Foundation)cosmetics.get(index)).setBrand(((Foundation)cosmetic).getBrand());
+            }
             o.writeObject(cosmetic);
             o.close(); f.close();
         }

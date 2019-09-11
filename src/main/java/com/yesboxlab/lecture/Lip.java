@@ -2,7 +2,7 @@ package com.yesboxlab.lecture;
 
 public class Lip extends Cosmetics {
     String brand, color;
-    double size, price;
+    double price;
 
     public Lip() {
 
@@ -23,12 +23,6 @@ public class Lip extends Cosmetics {
         this.color = color;
     }
 
-    public double getSize() {
-        return size;
-    }
-    public void setSize(double size) {
-        this.size = size;
-    }
 
     public double getPrice() {
         return price;
@@ -37,10 +31,9 @@ public class Lip extends Cosmetics {
         this.price = price;
     }
 
-    public Lip(String cosmeticId, String name, String brand, double size, double price, int stock, String color) {
-        super(cosmeticId, name, stock);
+    public Lip(String cosmeticId, String name, String brand, double price, int stock, String color, String category) {
+        super(cosmeticId, name, stock, category);
         this.brand =brand;
-        this.size = size;
         this.price = price;
         this.color = color;
     }

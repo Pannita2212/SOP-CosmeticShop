@@ -1,7 +1,9 @@
 package com.yesboxlab.lecture;
 
-public class Cosmetics {
-    String cosmeticId, name;
+import java.io.Serializable;
+
+public class Cosmetics implements Serializable {
+    String cosmeticId, name, category;
     int stock;
 
     public String getCosmeticId() {
@@ -25,15 +27,23 @@ public class Cosmetics {
         this.stock = stock;
     }
 
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public Cosmetics() {
 
     }
 
     //details about cosmetics
-    public Cosmetics(String cosmeticId, String name, int stock) {
+    public Cosmetics(String cosmeticId, String name, int stock, String category) {
         this.cosmeticId = cosmeticId;
         this.name = name;
         this.stock = stock;
+        this.category = category;
     }
 
     public String buyCosmetics(int num) {
